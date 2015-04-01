@@ -1,0 +1,12 @@
+- hosts: win
+  gather_facts: no
+  tasks:
+  - name: ping stuff
+    win_ping:
+
+- hosts: linux
+  gather_facts: no
+  tasks:
+  - name: ping linux hosts
+    ping:
+
